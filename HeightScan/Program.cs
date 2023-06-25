@@ -21,13 +21,13 @@ if (!await heightScan.RunMeasurements())
     return -1;
 }
 
-if (!heightScan.WriteExcel(@"C:\Users\grete\Desktop\tmp\HeightScan.xlsx"))
+if (!heightScan.WriteExcel(@"HeightScan.xlsx"))
 {
     Console.WriteLine("Writing Excel file failed");
     return -1;
 }
 
-if (!heightScan.WriteStl(@"C:\Users\grete\Desktop\tmp\HeightScan.stl"))
+if (!heightScan.WriteStl(@"HeightScan.stl"))
 {
     Console.WriteLine("Writing STL file failed");
     return -1;
