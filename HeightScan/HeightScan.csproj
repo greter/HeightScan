@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>HightScan</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="ClosedXML" Version="0.101.0" />
+      <PackageReference Include="Flurl.Http" Version="3.2.4" />
+      <PackageReference Include="IxMilia.Stl" Version="0.1.3" />
+      <PackageReference Include="System.Data.HashFunction.CRC" Version="2.0.0" />
+    </ItemGroup>
+
+</Project>
