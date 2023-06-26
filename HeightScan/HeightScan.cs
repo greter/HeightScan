@@ -49,18 +49,18 @@ public class HeightScan: IDisposable
                 return false;
             }
 
-            int nrOfXSteps = (int)(((xMax - xMin) / step) - 1);  
-            int nrOfYSteps = (int)(((yMax - yMin) / step) - 1);
+            int nrOfXSteps = (int)((xMax - xMin) / step) ;  
+            int nrOfYSteps = (int)((yMax - yMin) / step);
 
-            measurements = new Measurement[nrOfXSteps][];
+            measurements = new Measurement[nrOfXSteps + 1][];
             for (var i = 0; i < measurements.Length; i++)
             {
-                measurements[i] = new Measurement[nrOfYSteps];
+                measurements[i] = new Measurement[nrOfYSteps + 1];
             }
         
-            for (var y = 0; y < nrOfYSteps; y++)
+            for (var y = 0; y <= nrOfYSteps; y++)
             {
-                for (var x = 0; x < nrOfXSteps; x++)
+                for (var x = 0; x <= nrOfXSteps; x++)
                 {
                     var xPos = x * step + xMin;
                     var yPos = y * step + yMin;
