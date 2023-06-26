@@ -9,11 +9,12 @@ if (! await heightScan.ConnectDevices())
     return -1;
 }
 
-heightScan.xMin = 131;
-heightScan.yMin = 94;
-heightScan.xMax = 194;
-heightScan.yMax = 222;
-heightScan.step = 1;
+// all in millimeters
+heightScan.xMin = 100;
+heightScan.yMin = 100;
+heightScan.xMax = 140;
+heightScan.yMax = 140;
+heightScan.step = 10;
 
 if (!await heightScan.RunMeasurements())
 {
